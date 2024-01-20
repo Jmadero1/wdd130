@@ -32,24 +32,24 @@ p {
     padding: 10px;
 }
 nav {
-    background-color: var(--nav-background); 
+    background-color: var(--nav-background-color); 
     font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
-    color: var(--nav-hover-link-color); 
+    color: var(--nav-link-color); 
     text-decoration: none; 
     padding: 10px 20px;
     display: block;
 }
 nav a:link, nav a:visited{
-    color: var(--nav-link-color);
+    color: var(--nav-hover-link-color);
 }
 
 nav a:hover {
-    color: #FFFFFF; 
-    background-color: var(--nav-hover-background); 
+    color: #232863; 
+    background-color: var(--nav-hover-link-color); 
 }
 
 
