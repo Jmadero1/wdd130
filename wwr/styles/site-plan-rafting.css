@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary-color: #074E9B; 
+    --secondary-color: #232863; 
+    --accent-color: #D3D3D3;
+    --additional-accent-color: #FFFFFF; 
+    --heading-font: 'Montserrat', sans-serif; 
+    --paragraph-font: 'Nunito', sans-serif; 
+    --navigation-background: #232863; 
+  --navigation-link-color: #D3D3D3; 
+  --navigation-hover-link-color: #FFFFFF; 
+  --navigation-hover-background: #074E9B; 
+  }
+  
+  body {
+    font-family: var(--paragraph-font); 
+    max-width: 960px;
+    margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font); 
+    color: #074E9B; 
+}
+
+header {
+    padding: 20px; 
+    background-color: #232863; 
+}
+p {
+    padding: 10px;
+}
+nav {
+    background-color: var(--navigation-background); 
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    color: var(--navigation-hover-link-color); 
+    text-decoration: none; 
+    padding: 10px 20px;
+    display: block;
+}
+nav a:link, nav a:visited{
+    color: var(--navigation-link-color);
+}
+
+nav a:hover {
+    color: #FFFFFF; 
+    background-color: var(--navigation-hover-background); 
+}
+
+
