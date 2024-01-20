@@ -3,14 +3,14 @@
 :root {
     --primary-color: #074E9B; 
     --secondary-color: #232863; 
-    --accent-color: #D3D3D3;
-    --additional-accent-color: #FFFFFF; 
+    --accent1-color: #D3D3D3;
+    --accent2-color: #FFFFFF; 
     --heading-font: 'Montserrat', sans-serif; 
     --paragraph-font: 'Nunito', sans-serif; 
-    --navigation-background: #232863; 
-  --navigation-link-color: #D3D3D3; 
-  --navigation-hover-link-color: #FFFFFF; 
-  --navigation-hover-background: #074E9B; 
+    --nav-background-color: #232863; 
+  --nav-link-color: #D3D3D3; 
+  --nav-hover-link-color: #FFFFFF; 
+  --nav-hover-background-color: #074E9B; 
   }
   
   body {
@@ -32,24 +32,24 @@ p {
     padding: 10px;
 }
 nav {
-    background-color: var(--navigation-background); 
+    background-color: var(--nav-background); 
     font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
-    color: var(--navigation-hover-link-color); 
+    color: var(--nav-hover-link-color); 
     text-decoration: none; 
     padding: 10px 20px;
     display: block;
 }
 nav a:link, nav a:visited{
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
     color: #FFFFFF; 
-    background-color: var(--navigation-hover-background); 
+    background-color: var(--nav-hover-background); 
 }
 
 
