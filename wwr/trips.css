@@ -1,0 +1,168 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #074E9B;
+    --secondary-color: #232863;
+    --accent1-color: #D3D3D3;
+    --accent2-color: #FFFFFF;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Nunito', sans-serif;
+    --nav-background-color: #232863;
+    --nav-link-color: #2068d3;
+    --nav-hover-link-color: #1d1a41;
+    --nav-hover-background-color: #074E9B;
+}
+
+/* Estilos Globales */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--heading-font);
+    background-color: #d4dbdf;
+}
+
+h1, h2, p {
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: #0056b3;
+    color: white;
+    justify-self: center;
+}
+
+/* Logo y Navegación */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation .button {
+    margin-left: 10px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(162, 195, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
+
+/* Sección de Imágenes */
+.section {
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 75px;
+    padding: 20px;
+}
+
+.image {
+    background-color: rgb(162, 195, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image p {
+    margin-top: 15px;
+}
+
+/* Botón de Reserva */
+button {
+    padding: 10px 20px;
+    background-color: #0069d9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),
+                -3px -3px 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(2px);
+}
