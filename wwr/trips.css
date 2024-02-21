@@ -3,24 +3,24 @@
 
 /* Variables */
 :root {
-    --primary-color: #074E9B;
-    --secondary-color: #232863;
-    --accent1-color: #D3D3D3;
-    --accent2-color: #FFFFFF;
+    --primary-color: #75C4FF; 
+    --secondary-color: #FFFFFF; 
+    --accent1-color: #738FDB; 
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Nunito', sans-serif;
-    --nav-background-color: #232863;
-    --nav-link-color: #2068d3;
-    --nav-hover-link-color: #1d1a41;
-    --nav-hover-background-color: #074E9B;
+    --nav-background-color: #232863; 
+    --nav-link-color: #2068d3; 
+    --nav-hover-link-color: #1d1a41; 
+    --nav-hover-background-color: #074E9B; 
 }
 
+/*https://coolors.co/palette/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5*/
 /* Estilos Globales */
 body {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     font-family: var(--heading-font);
-    background-color: #d4dbdf;
+    background-color: #f3fbff;
 }
 
 h1, h2, p {
@@ -31,6 +31,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 30px;
+    color:#343a40
 }
 
 h2 {
@@ -43,11 +44,11 @@ h2 {
 p {
     color: black;
     line-height: 1.8;
-    text-align: justify;
+    text-align: center;
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: #F0A166;
     padding: 20px 0;
     text-align: center;
 }
@@ -60,9 +61,9 @@ footer a {
 
 /* Barra Superior */
 .top-bar {
-    background-color: #0056b3;
+    background-color: #F0A166;
     color: white;
-    justify-self: center;
+    text-align: center;
 }
 
 /* Logo y Navegación */
@@ -70,6 +71,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .logo img {
@@ -79,10 +81,12 @@ footer a {
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .navigation .button {
     margin-left: 10px;
+    align-items: center;
 }
 
 /* Hero */
@@ -92,9 +96,10 @@ footer a {
     align-items: center;
     text-align: center;
     padding: 50px 0;
-    background-color: rgb(162, 195, 255);
+    background-color: #B7D7FF;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 .hero img {
@@ -104,12 +109,16 @@ footer a {
     margin-bottom: 20px;
 }
 
+.container h2, h1 {
+    color: #506fa4;
+}
+
 /* Botones */
 .button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #FFE0B7;
+    color:black;
     text-decoration: none;
     border-radius: 30px;
     margin-top: 20px;
@@ -135,27 +144,31 @@ footer a {
 }
 
 .image {
-    background-color: rgb(162, 195, 255);
+    background: #B7D7FF;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
                 -5px -5px 15px rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: 750px;
+    
 }
 
 .image img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
 }
 
 .image p {
     margin-top: 15px;
+    width: 300px;
+    height: 350px;
 }
 
-/* Botón de Reserva */
 button {
     padding: 10px 20px;
-    background-color: #0069d9;
+    background-color: #FFE0B7;
     border: none;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),

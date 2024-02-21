@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --primary-color: #074E9B; 
-    --secondary-color: #232863; 
-    --accent1-color: #D3D3D3;
-    --accent2-color: #FFFFFF; 
-    --heading-font: 'Montserrat', sans-serif; 
-    --paragraph-font: 'Nunito', sans-serif; 
-    --nav-background-color: #232863; 
-    --nav-link-color: #2068d3; 
-    --nav-hover-link-color: #1d1a41; 
-    --nav-hover-background-color: #074E9B; 
+    --primary-color: #F0A166; 
+    --secondary-color: #FFFFFF; /* Blanco */
+    --accent1-color: #738FDB; /* Azul */
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Nunito', sans-serif;
+    --nav-background-color: #232863; /* Color de fondo del menú de navegación */
+    --nav-link-color: #2068d3; /* Color de los enlaces del menú de navegación */
+    --nav-hover-link-color: #1d1a41; /* Color de los enlaces del menú de navegación al pasar el ratón */
+    --nav-hover-background-color: #074E9B; /* Color de fondo del menú de navegación al pasar el ratón */
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     font-family: var(--heading-font); 
     background-color:#ffffff ; 
@@ -22,7 +21,7 @@ body {
    }
 
 h1, h2, p {
-    color: #fff; 
+    color: #212529; 
 
 }
 
@@ -40,7 +39,7 @@ h2 {
     margin-bottom: 20px; 
 
 }
-
+a
 p {
     color: black; 
     line-height: 1.8; 
@@ -60,25 +59,35 @@ footer a {
     color: #fff; 
 }
 
-.logo {
-    display: flex; 
+.parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between; 
+}
+.parrafo img {
+    width: 350px;
+    height: auto;
+    border-radius: 3%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo img {
     width: 70px;
     height: auto;
-
 }
 
 .navigation {
     display: flex;
-
 }
 
 .navigation .button {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 
@@ -88,15 +97,15 @@ footer a {
     align-items: center; 
     text-align: center;
     padding: 50px 0; 
-    background-color: var(--accent1-color); 
+    background-color: #B7D7FF;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .hero img {
-    width: 200px; 
+    width: 450px; 
     height: auto;
-    border-radius: 50%; 
+    border-radius: 5%; 
     margin-bottom: 20px; 
 }
 
@@ -104,7 +113,7 @@ footer a {
     display: inline-block;
     padding: 15px 30px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: black;
     text-decoration: none;
     border-radius: 30px;
     margin-top: 20px;
@@ -163,100 +172,58 @@ footer a {
 }
 
 .caption {
-    color: #fff; 
+    color:#292929; 
 }
 
-form {
-    background-color: var(--accent2-color); 
-    border-radius: 20px; 
-    box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff; 
-    padding: 20px; 
-    width: 80%; 
-    max-width: 600px; 
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 30px #d9d9d9, -10px -10px 30px #ffffff;
 }
 
-fieldset {
-    border: none; 
-    margin-bottom: 20px; 
-}
-
-legend {
-    font-weight: bold; 
+.form-group {
+    margin: 20px 20px 20px 20px;
 }
 
 label {
-    display: block; 
-    margin-bottom: 5px; 
+    display: block;
+    font-weight: bold;
+    color: #506fa4;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: inset 6px 6px 10px #9cb7d1, inset -6px -6px 10px #ffffff;
 }
 
+input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 .submit-button {
-    background-color: var(--primary-color); 
-    color: white; 
+    display: block;
+    width: 100%;
+    padding: 10px;
     border: none;
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    border-radius: 10px;
+    background-color: #F0A166;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px #c8c8c8, -6px -6px 10px #ffffff;
 }
 
-.submit-button:hover {
-    background-color: #0069d9; 
+.neumorphism:hover {
+    box-shadow: none;
 }
 
-.form-container {
-    max-width: 600px; 
-    margin: 0 auto; 
-    background-color: var(--accent2-color); 
-    padding: 30px; 
-    border-radius: 20px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); 
-}
-
-.form-container label {
-    color: var(--primary-color); 
-}
-
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container textarea {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 20px; 
-    border: none; 
-    border-radius: 10px; 
-    background-color: #f2f2f2; 
-}
-
-.form-container input[type="checkbox"] {
-    margin-right: 10px; 
-}
-
-.submit-button {
-    display: block; 
-    width: 100%; 
-    padding: 15px 0; 
-    background-color: var(--primary-color);
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
-}

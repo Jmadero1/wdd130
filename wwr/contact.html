@@ -46,46 +46,57 @@
 
 <div class="employee-profiles">
     <div class="employee">
-        <img src="images/employee1.jpg" alt="Employee 1">
+        <img src="images/3c28a54ea98b44b5bb330830.jpeg" alt="Employee 1">
         <p class="caption">John Doe<br><span>Title: Sales Manager</span></p>
     </div>
     <div class="employee">
-        <img src="images/employee2.jpg" alt="Employee 2">
+        <img src="images/3c28a54ea98b44b5bb330830.jpeg" alt="Employee 2">
         <p class="caption">Jane Smith<br><span>Title: Marketing Specialist</span></p>
     </div>
     <div class="employee">
-        <img src="images/employee3.jpg" alt="Employee 3">
+        <img src="images/3c28a54ea98b44b5bb330830.jpeg" alt="Employee 3">
         <p class="caption">David Johnson<br><span>Title: Customer Service Representative</span></p>
     </div>
 </div>
 
 <h2>Contact Us</h2>
 
-<form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
+<form action="#" method="post" class="contact-form">
+    <div class="form-group neumorphism">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
     
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <div class="form-group neumorphism">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
     
-    <fieldset>
-        <legend>Purpose of Message:</legend>
-        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-        <label for="general">General Inquiry</label><br>
-        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-        <label for="reservation">Reservation Question</label><br>
-        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-        <label for="suggestion">Website Suggestion</label><br><br>
-    </fieldset>
+    <div class="form-group neumorphism">
+        <fieldset>
+            <legend>Purpose of Message:</legend>
+            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+            <label for="suggestion">Website Suggestion</label><br>
+        </fieldset>
+    </div>
     
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    <div class="form-group neumorphism">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+    </div>
     
-    <input type="checkbox" id="subscribe" name="subscribe">
-    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
+    <div class="form-group neumorphism">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+    </div>
     
-    <input type="submit" value="Submit" class="submit-button">
+    <input type="submit" value="Submit" class="submit-button neumorphism">
 </form>
+
 <div class="map">
     <!-- Embed Google Map here -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.774648631206!2d-122.41969468430342!3d37.77492957975149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1644557242696!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

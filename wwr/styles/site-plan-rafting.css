@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --primary-color: #074E9B; 
-    --secondary-color: #232863; 
-    --accent1-color: #D3D3D3;
-    --accent2-color: #FFFFFF; 
-    --heading-font: 'Montserrat', sans-serif; 
-    --paragraph-font: 'Nunito', sans-serif; 
-    --nav-background-color: #232863; 
-  --nav-link-color: #2068d3; 
-  --nav-hover-link-color: #1d1a41; 
-  --nav-hover-background-color: #074E9B; 
-  }
+    --primary-color: #75C4FF; /* Celeste */
+    --secondary-color: #FFFFFF; /* Blanco */
+    --accent1-color: #738FDB; /* Azul */
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Nunito', sans-serif;
+    --nav-background-color: #232863; /* Color de fondo del menú de navegación */
+    --nav-link-color: #2068d3; /* Color de los enlaces del menú de navegación */
+    --nav-hover-link-color: #1d1a41; /* Color de los enlaces del menú de navegación al pasar el ratón */
+    --nav-hover-background-color: #074E9B; /* Color de fondo del menú de navegación al pasar el ratón */
+}
   
   body {
     font-family: var(--paragraph-font); 
